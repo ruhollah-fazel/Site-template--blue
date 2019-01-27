@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: BYekan;
+    src: url(../fonts/BYekan.eot) format('eot'), url(../fonts/BYekan.woff) format('woff'), url(../fonts/BYekan.ttf) format('truetype');
+}
+
+body {
+    font-family: BYekan;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#main {
+    width: 75rem;
+    height: 100rem;
+    margin: 0 auto;
+}
+
+.container {
+    width: 70rem;
+    margin: 0 auto;
+}
+
+#main > header {
+    width: 100%;
+    height: 5.6rem;
+    /*background-color: #A3A6E2;*/
+    background-color: #fff;
+    padding-top: .6rem;
+    border-bottom: .1rem solid #122586;
+}
+
+#main header div.logo-place {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: #122586;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: .8rem;
+    font-weight: bold;
+    /*color: #6971D5;*/
+    color: #fff;
+    margin-right: .7rem;
+    float: right;
+}
+
+#main header a.web-name h1 {
+    font-size: 1.5rem;
+    float: right;
+    color: #122586;
+    margin: .9rem;
+}
+
+#main header .search {
+    float: left;
+    margin: 1.1rem 6rem;
+}
+
+#main header .search input.search-field {
+    width: 13rem;
+    height: 2rem;
+    border: .1rem solid #122586;
+    float: right;
+}
+
+#main header .search input.search-submit {
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: #122586;
+    color: #fff;
+    font-family: BYekan;
+    font-size: .8rem;
+}
+
+/*-------main menu---------*/
+
+#main .main-menu {
+    height: 3rem;
+    display: flex;
+    align-items: flex-start;
+    margin: 0rem 3.5rem;
+}
+
+#main .main-menu > a {
+    background-color: #122586;
+    color: #fff;
+    margin-right: .2rem;
+    padding: .4rem 1rem;
+}
+
+#main .main-menu .dropdown {
+    background-color: #122586;
+    color: #fff;
+    margin-right: .2rem;
+    padding: .4rem .7rem;
+    position: relative;
+    cursor: default;
+}
+
+#main .main-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 2.5rem;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+}
+
+#main .main-menu .dropdown-content a {
+    display: block;
+    color: #fff;
+    padding: .6rem 2rem .6rem 3rem;
+    background-color: #122586;
+    border-bottom: .05rem solid #fff;
+}
+
+#main .main-menu .dropdown i {
+    margin-right: .4rem;
+    font-size: .6rem;
+}
+
+#main .main-menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#main .main-menu .dropdown a:hover {
+    background-color: #3830c9;
+    color: #fff;
+}
+
+#main .main-menu a:hover {
+    background-color: #fff;
+    color: #122586;
+    border-bottom: .1rem solid #122586;
+}
+
+#main .main-menu .dropdown:hover {
+    background-color: #fff;
+    color: #122586;
+    border-bottom: .1rem solid #122586;
+}
+
+#main .main-menu .dropdown:hover > i {
+    font-size: .8rem;
+    color: #000;
+}
+
+/************* START ABOUT US ***************/
+#main .about-us {
+    width: 25rem;
+    margin: 2rem 3.7rem;
+    float: right;
+}
+
+#main .about-us p {
+    text-align: justify;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+
+
+/************* END ABOUT US ***************/
+/************* START SLIDER ***************/
+#main .slider {
+    margin: 4rem 0rem 3rem 8rem;
+    float: left;
+}
+
+#main .slider img {
+    width: 30rem;
+    height: 18.75rem;
+    display: block;
+}
+
+#main .slider i {
+    font-size: 1.5rem;
+    color: #122586;
+    border: .1rem solid #122586;
+    padding: .3rem .6rem;
+}
+
+#main .slider i#next {
+    margin: .4rem 12.5rem 0 0;
+}
+
+#main .slider i#prev {
+    margin: .4rem 1rem 0 0;
+
+}
+
+/************* END SLIDER ***************/
+#main #teammates-header,
+#courses-header,
+#guidence-header {
+    width: 7rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: -1rem;
+    z-index: 3;
+    position: relative;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#main #courses-header {
+    width: 11rem;
+}
+
+#main #guidence-header {
+    width: 8rem;
+}
+
+#main #teammates-header h2,
+#courses-header h2,
+#guidence-header h2 {
+    margin-bottom: -1.5rem;
+    font-size: 1.1rem;
+}
+
+#main #teammates-header i,
+#courses-header i,
+#guidence-header i {
+    font-size: 3rem;
+}
+
+#main .line {
+    width: 100%;
+    height: 1rem;
+    border-top: .1rem solid #122586;
+    color: #fff;
+    cursor: pointer;
+}
+
+/************* START TEAMMATES ***************/
+#main .teammates-box {
+    width: 100%;
+    padding: 1.6rem .8rem .7rem;
+    float: right;
+    margin-bottom: 1rem;
+}
+
+#main .teammates-box .teammate {
+    float: right;
+    width: 33%;
+    padding: .3rem 3rem;
+    text-align: center;
+}
+
+#main .teammates-box .teammate img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+#main .teammates-box .teammate figcaption {
+    font-weight: bold;
+    color: #122586;
+    margin-bottom: .3rem;
+}
+
+#main .teammates-box .teammate p {
+    background-color: #f1f1f1;
+    font-size: .9rem;
+    padding: .2rem;
+    text-align: justify;
+}
+
+/************* END TEAMMATES ***************/
+/************* START COURSES ***************/
+#main .courses-box {
+    width: 100%;
+    padding: 1.6rem .8rem .7rem;
+    float: right;
+    margin-bottom: 1rem;
+}
+
+#main .courses-box .courses {
+    float: right;
+    width: 25%;
+    padding: .3rem 3rem;
+    text-align: center;
+}
+
+#main .courses-box .courses img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+#main .courses-box .courses figcaption {
+    font-weight: bold;
+    color: #122586;
+    margin-bottom: .3rem;
+}
+
+/************* END COURSES ***************/
+#main .guidence-content {
+    width: 100%;
+    padding: 1.6rem .8rem .7rem;
+    float: right;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: .1rem solid #122586;
+    border-top: 0;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+/************* START ASIDE ***************/
+
+#aside-box {
+    width: 17rem;
+    float: left;
+    margin-top: 5rem;
+}
+
+#aside-box header {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+}
+
+#aside-box header div {
+    width: 33%;
+    cursor: pointer;
+    background-color: #122586;
+    color: #fff;
+    font-size: .8rem;
+    padding: .6rem .4rem;
+    text-align: center;
+    margin-right: .2rem;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+
+}
+
+#aside-box header .active {
+    background-color: #fff;
+    color: #122586;
+    font-weight: bold;
+    font-size: .9rem;
+    border-bottom: .1rem solid #122586;
+}
+
+#aside-box .aside-content-box {
+    width: 100%;
+    position: relative;
+    /* background-color: #eee;
+    border: .1rem solid #ccc;
+    border-radius: .3rem;
+    margin-top: .5rem;*/
+}
+
+#aside-box .aside-content-box .aside-content {
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    padding-top: .6rem;
+    background-color: #fff;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+}
+
+#aside-box .aside-content-box .aside-content div {
+    margin-bottom: 3rem;
+}
+
+#aside-box .aside-content-box .aside-content div img {
+    width: 6rem;
+    height: 6rem;
+    float: right;
+    margin-left: .6rem;
+    border-radius: .7rem;
+    margin-top: .5rem;
+}
+
+#aside-box .aside-content-box .aside-content div h5 {
+    width: 10rem;
+    display: inline-block;
+    text-align: center;
+}
+
+#aside-box .aside-content-box .aside-content div p {
+    font-size: .75rem;
+    color: #555;
+    text-align: justify;
+    border-top: .09rem solid #ddd;
+    margin-top: .3rem;
+}
+
+#aside-box .aside-content-box .aside-content div button {
+    float: left;
+    margin-top: .5rem;
+    padding: .1rem .3rem;
+    font-family: Byekan;
+    font-size: .7rem;
+    background-color: #fff;
+    color: #122586;
+    border: .02rem solid #122586;
+    cursor: pointer;
+}
+
+#aside-box .aside-content-box #last-content {
+    z-index: 1;
+}
+
+#aside-box .aside-content-box #mostVisited-content {
+    z-index: -1;
+}
+
+#aside-box .aside-content-box #mostPopular-content {
+    z-index: -1;
+}
+
+/************* END ASIDE ***************/
+/************* START PRODUCT-BOX ***************/
+#main section.product-box {
+    float: right;
+    margin: 6rem 0 0 2rem;
+    margin-right: 0;
+    margin-left: 2rem;
+    width: 51rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#main .product-box article {
+    padding: .4rem;
+    background-color: #eee;
+    margin-left: .4rem;
+    margin-bottom: .4rem;
+}
+
+#main .product-box article figcaption {
+    font-size: .9rem;
+    text-align: center;
+    background-color: #122586;
+    color: #fff;
+    margin-bottom: .6rem;
+}
+
+#main .product-box article img {
+    width: 100%;
+    height: 100%;
+}
+
+#main .product-box article button {
+    font-family: Byekan;
+    padding: .2rem .5rem;
+    background-color: #122586;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+#main .product-box article button i {
+    font-size: .8rem;
+    padding-left: .3rem;
+}
+
+/************* END PRODUCT-BOX ***************/
+#main >footer {
+    height: 12rem;
+    border-top: .1rem solid #122586;
+    margin-top: 3.5rem;
+}
+#main >footer p {
+    margin: 2rem;
+    text-align: justify;
+    font-size: .9rem;
+}
+#main > footer .khabarnameh {
+    float: left;
+    margin: 2.5rem 4rem;
+}
+#main > footer .khabarnameh input[type="text"] {
+    border: .1rem solid #122586;
+    height: 2.5rem;
+    width: 16rem;
+    float: right;
+    color: #122586;
+    font-size: 1.2rem;
+    font-family: Bekan;
+    padding-right: .6rem;
+}
+#main > footer .khabarnameh input[type="submit"] {
+    background-color: #122586;
+    height: 2.5rem;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: Bekan;
+    padding: .5rem 4rem;
+    float: right;
+}
+#main > footer h5 {
+    background-color: #122586;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 3rem;
+}
+#main > footer h5 span {
+    color: #c97272;
+}
